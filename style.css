@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #fff;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    background-color: #F79F1F; 
+    padding: 35px;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#carrinho {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#carrinho-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#carrinho-items li {
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+#bebidascolor{
+    color: red;
+}
+.comida {
+    color: brown; 
+}
+
+h1 {
+    color: #fff; 
+    text-align: center;
+}
+
+#menu button {
+    background-color: #FFD43B; 
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 130px;
+    ;
+}
+
+
+#carrinho {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #dee2e6; 
+    background-color: #fff; 
+}
+
+#finalizar-pedido {
+    background-color: #FF5733; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 130px;
+    
+}
+
+#carrinho-items {
+    list-style-type: none;
+}
+
+#carrinho-items li {
+    margin-bottom: 5px;
+}
+#menu ul li {
+    cursor: pointer; 
+    padding: 10px; 
+    transition: box-shadow 0.3s ease; 
+}
+
+#menu ul li.active,
+#menu ul li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#menu button {
+    background-color: #FFD43B; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-color: #000000;
+}
+
+#menu button.active {
+    background-color: #FF5733;
+}
+.menu-item {
+    color: black;
+}
+
+#menu ul {
+    display: none; 
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+#limpar-pedido{
+    color:white;
+    background-color: #000000;
+    border-radius: 130px;
+}
+#garçom{
+border-radius: 130px;
+background-color: rgb(255, 166, 0);
+}
