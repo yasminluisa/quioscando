@@ -16,6 +16,13 @@
     <main>
         <section id="menu">
             <button onclick="toggleMenu('menu-mesa')">Menu Mesas</button>
+
+
+            <button onclick="toggleMenu('menu-bebidas')">Bebidas</button>
+
+
+            <button onclick="toggleMenu('menu-comidas')">Comidas</button>
+
             <ul id="menu-mesa" style="display: none;">
 
                 <li class="mesa menu-item" onclick="selecionarMesa(1)">Mesa 1</li>
@@ -24,25 +31,26 @@
                 <li class="mesa menu-item" onclick="selecionarMesa(4)">Mesa 4</li>
                 <li class="mesa menu-item" onclick="selecionarMesa(5)">Mesa 5</li>
                 <li class="mesa menu-item" onclick="selecionarMesa(6)">Mesa 6</li>
-            
+                <hr>
+
             </ul>
 
-            <button onclick="toggleMenu('menu-bebidas')">Bebidas</button>
             <ul id="menu-bebidas">
                 <li class="bebida menu-item" onclick="addItemToCart('Água de Coco', 5.00, 'bebida')">Água de Coco🥥 - R$5.00</li>
                 <li class="bebida menu-item" onclick="addItemToCart('Caipirinha', 12.00, 'bebida')">Caipirinha🍹 - R$12.00</li>
                 <li class="bebida menu-item" onclick="addItemToCart('Suco de Frutas Tropicais', 8.00, 'bebida')">Suco 🧃- R$8.00</li>
                 <li class="bebida menu-item" onclick="addItemToCart('Água', 2.00, 'bebida')">Água 💦- R$2.00</li>
                 <li class="bebida menu-item" onclick="addItemToCart('Cerveja Gelada', 7.00, 'bebida')">Cerveja Gelada 🍺- R$7.00</li>
+                <hr>
+
             </ul>
 
-            <button onclick="toggleMenu('menu-comidas')">Comidas</button>
             <ul id="menu-comidas">
                 <li class="comida menu-item" onclick="addItemToCart('Pastel de Camarão', 10.00, 'comida')">Pastel de Camarão 🦐- R$10.00</li>
                 <li class="comida menu-item" onclick="addItemToCart('Açaí na Tigela', 12.00, 'comida')">Açaí na Tigela 🍨 - R$12.00</li>
                 <li class="comida menu-item" onclick="addItemToCart('salgados', 6.00, 'comida')">salgados 🥐- R$6.00</li>
                 <li class="comida menu-item" onclick="addItemToCart('porção de batata frita', 10.00,'comida')">Porção de batata frita 🍟-R$10.00</li>
-          
+
             </ul>
             
         </section>

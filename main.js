@@ -1,6 +1,7 @@
 var totalComidas = 0;
 var totalBebidas = 0;
 var totalGeral = 0;
+var carrinhoTable = [];
 
 function toggleMenu(menuId) {
     var menu = document.getElementById(menuId);
@@ -12,14 +13,32 @@ function toggleMenu(menuId) {
 }
 
 function addItemToCart(itemName, itemPrice, type) {
+    var alreadyExist = false; // variavel se já existe na tabela
     var cart = document.getElementById('carrinho-items');
     var totalBebidasElement = document.getElementById('total-bebidas');
     var totalComidasElement = document.getElementById('total-comidas');
     var totalElement = document.getElementById('total');
 
-    var li = document.createElement('li');
-    li.textContent = itemName + ' - R$' + itemPrice.toFixed(2);
-    cart.appendChild(li);
+    for (let i = 0; i < carrinhoTable.length; i++) {
+        if (carrinhoTable[i] == itemName){ // se sim
+            alreadyExist = true;
+        }    
+    }
+
+    if (alreadyExist == false){
+        var li = document.createElement('li');
+        li.textContent = itemName + ' - R$' + itemPrice.toFixed(2);
+        li.id = itemName;
+        li.setAttribute("qt",1)
+        cart.appendChild(li);
+        carrinhoTable.push(itemName)
+    }
+    else{
+        var itemExistente = document.getElementById(itemName);
+        itemExistente.setAttribute("qt",parseInt(itemExistente.getAttribute("qt"))+1);
+        itemExistente.textContent = itemName + ' ('+itemExistente.getAttribute("qt")+'x) - R$' + itemPrice.toFixed(2);
+    }
+ 
 
     if (type === 'bebida') {
         totalBebidas += itemPrice;
@@ -51,6 +70,7 @@ function addItemToCart(itemName, itemPrice, type) {
         totalComidas = 0;
         totalBebidas = 0;
         totalGeral = 0;
+        carrinhoTable = [];
     
         var totalBebidasElement = document.getElementById('total-bebidas');
         var totalComidasElement = document.getElementById('total-comidas');
