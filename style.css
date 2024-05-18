@@ -12,6 +12,8 @@ header {
     background-color: #F79F1F; 
     padding: 45px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -71,21 +73,22 @@ h1 {
 }
 
 #menu button {
-    background-color: #FFD43B; 
+    background-color:#FF5733; 
     border: none;
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
     border-radius: 130px;
-    ;
+    
 }
 
 
 #carrinho {
     margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #dee2e6; 
+    padding: 100px;
+    border: 3,5px solid #dee2e6; 
     background-color: #fff; 
+    width: 284px;
 }
 
 #finalizar-pedido {
@@ -117,7 +120,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 #menu button {
-    background-color: #FFD43B; 
+    background-color:#ffad33; 
     color: #fff; 
     border: none;
     padding: 10px 20px;
@@ -150,4 +153,11 @@ a{
 border-radius: 130px;
 background-color: rgb(255, 166, 0);
 }
-
+p,h2,li{
+    text-align: center;
+}
+#menu{
+    align-items: center;
+    justify-content: baseline;
+    text-align: center;
+}
