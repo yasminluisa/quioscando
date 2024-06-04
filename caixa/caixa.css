@@ -1,0 +1,33 @@
+/* Estilos específicos para a interface do caixa */
+#controle-pedidos {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#mesa-numero {
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+#detalhes-pedidos {
+    margin-top: 20px;
+}
+
+#detalhes-pedidos h3 {
+    margin-top: 0;
+}
+
+#total-mesa {
+    font-weight: bold;
+}
+
+#finalizar-conta {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 10px;
+}
